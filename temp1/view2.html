@@ -1,0 +1,8 @@
+<div class="container">	
+<h2>View2</h2>
+Name:<br>
+			<input type="text" data-ng-model="name"/>{{name}}
+		<ul>
+			<li data-ng-repeat="pname in names | filter:city | orderBy:'name'">{{pname.name | uppercase}} - {{pname.city}}</li>
+		</ul>	
+		</div>

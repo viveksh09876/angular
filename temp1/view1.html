@@ -1,0 +1,16 @@
+<div class="container">	
+<h2>View1</h2>
+Name:<br>
+			<input type="text" data-ng-model="filter.name"/>{{filter.name}}
+		<ul>
+			<li data-ng-repeat="pname in names | filter:flter.name">{{pname.name | uppercase}} - {{pname.city}}</li>
+		</ul>	
+		<br>
+		Customer Name: <br>
+		<input type="text" data-ng-model="newCustomer.name" /><br>
+		Customer City: <br>
+		<input type="text" data-ng-model="newCustomer.city" /><br>
+		<button data-ng-click="addCustomer()">Add Customer</button>
+		<br>
+		<a href="#/partial2">View 2</a>
+</div>
